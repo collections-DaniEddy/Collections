@@ -4,8 +4,6 @@ import java.util.Scanner;
 public class GradesApplication {
 
 
-
-
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     HashMap <String, Student> students = new HashMap<>();
@@ -57,12 +55,9 @@ public class GradesApplication {
 //                System.out.println("x = " + x);
                 System.out.println("Name : " + students.get(x).getName());
                 System.out.println("Username : " + x);
-                System.out.println("Name : " + students.get(x).getGradeAverage());
+                System.out.println("Grade Average : " + students.get(x).getGradeAverage());
+
             }
-
-
-
-
 
 
 

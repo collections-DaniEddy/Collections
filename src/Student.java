@@ -1,13 +1,16 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student {
     private String name;
     private ArrayList<Integer> grades;
 
 
+
     public Student(String name) {
         this.name = name;
         this.grades = new ArrayList();
+
     }
 
     // returns the student's name
@@ -27,9 +30,8 @@ public class Student {
        }
         return sum / grades.size();
 
-
-
     }
+
 
 
     public static void main(String[] args) {
