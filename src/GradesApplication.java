@@ -48,9 +48,19 @@ public class GradesApplication {
 
             System.out.println("\nWhat student would you like to see more information on?");
             String x = input.nextLine();
+
             if(!students.containsKey(x)){
                 System.out.println("That is not a valid response");
+                System.out.println("\nWhat student would you like to see more information on?");
+            } 
+            if(students.containsKey(x)) {
+//                System.out.println("x = " + x);
+                System.out.println("Name : " + students.get(x).getName());
+                System.out.println("Username : " + x);
+                System.out.println("Name : " + students.get(x).getGradeAverage());
             }
+
+
 
 
 
