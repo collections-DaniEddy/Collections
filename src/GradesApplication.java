@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication {
 
@@ -6,6 +7,7 @@ public class GradesApplication {
 
 
     public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
     HashMap <String, Student> students = new HashMap<>();
     //Creating new student
     Student one = new Student("Dani");
@@ -34,10 +36,26 @@ public class GradesApplication {
     students.put("annetteisrad45",four);
 
     //looping to show that each student was given a github username
-    for(String userName: students.keySet()){
-        System.out.println("x = " + userName);
-    }
 
 
+
+        System.out.println("Welcome!\n" +
+                "\n" +
+                "Here are the GitHub usernames of our students:\n");
+        for(String userName: students.keySet()) {
+            System.out.print(userName + " | ");
+        }
+
+            System.out.println("\nWhat student would you like to see more information on?");
+            String x = input.nextLine();
+            if(!students.containsKey(x)){
+                System.out.println("That is not a valid response");
+            }
+
+
+
+
+
+          }
     }
-}
+
