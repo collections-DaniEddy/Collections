@@ -34,8 +34,8 @@ public class GradesApplication {
     students.put("annetteisrad45",four);
 
     //looping to show that each student was given a github username
-    for(String x: students.keySet()){
-        System.out.println("x = " + x);
+    for(String userName: students.keySet()){
+        System.out.println("x = " + userName);
     }
 
 
