@@ -52,7 +52,6 @@ public class GradesApplication {
                 System.out.println("\nWhat student would you like to see more information on?");
             }
             if (students.containsKey(x)) {
-//                System.out.println("x = " + x);
                 System.out.println("Name : " + students.get(x).getName());
                 System.out.println("Username : " + x);
                 System.out.println("Grade Average : " + students.get(x).getGradeAverage());
